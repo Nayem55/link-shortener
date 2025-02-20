@@ -34,7 +34,7 @@ function App() {
   return (
     <div className="min-h-screen flex flex-col-reverse items-center justify-center bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 p-6">
       {/* Additional Text Section */}
-      <div className="p-6 rounded-lg shadow-md w-full max-w-lg mt-8">
+      <div className="p-6 rounded-lg shadow-md w-full max-w-xl mt-8">
         <h2 className="text-2xl font-bold text-white text-center mb-4">
           Simplify Your Links Instantly
         </h2>
@@ -53,7 +53,7 @@ function App() {
       </div>
 
       {/* Main Link Shortener Section */}
-      <div className="bg-white p-8 rounded-xl shadow-lg w-full max-w-lg">
+      <div className="bg-white p-8 rounded-xl shadow-lg w-full max-w-xl">
         <h1 className="text-4xl font-extrabold text-center text-transparent bg-clip-text bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 mb-6">
           Link Shortener
         </h1>
@@ -83,7 +83,7 @@ function App() {
         {shortUrl && (
           <div className="mt-6 text-center">
             <p className="text-md text-gray-700">Your short link:</p>
-            <div className="flex justify-center items-center space-x-2 mt-2">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-0 justify-center items-center space-x-2 mt-2">
               <a
                 href={shortUrl}
                 target="_blank"
