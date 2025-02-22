@@ -7,7 +7,7 @@ function App() {
   const [copied, setCopied] = useState(false);
   const [isLoading, setIsLoading] = useState(false);
 
-  const BASE_URL = "http://localhost:5000"; // Change this when deploying
+  const BASE_URL = "https://1clk.xyz"; // Change this when deploying
 
   const handleShorten = async () => {
     if (!longUrl.trim()) return alert("Please enter a valid URL");
