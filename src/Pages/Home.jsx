@@ -1,6 +1,7 @@
 import axios from "axios";
 import React, { useState } from "react";
 import { Helmet } from "react-helmet-async";
+import toast from "react-hot-toast";
 
 const Home = () => {
   const [longUrl, setLongUrl] = useState("");
@@ -11,7 +12,7 @@ const Home = () => {
   const BASE_URL = "https://1clk.xyz"; // Change this when deploying
 
   const handleShorten = async () => {
-    if (!longUrl.trim()) return alert("Please enter a valid URL");
+    if (!longUrl.trim()) return toast.error("Please enter a valid URL");
 
     setIsLoading(true);
 
@@ -21,7 +22,7 @@ const Home = () => {
       setCopied(false);
     } catch (error) {
       console.error("Error shortening URL:", error);
-      alert("Failed to shorten URL");
+      toast.error("Failed to shorten URL");
     } finally {
       setIsLoading(false);
     }

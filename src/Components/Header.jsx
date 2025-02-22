@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import logo from "../assets/Images/logo.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -15,10 +16,10 @@ const Header = () => {
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6">
-          <a href="#" className="hover:text-gray-300 transition">Home</a>
-          <a href="#" className="hover:text-gray-300 transition">About</a>
-          <a href="#" className="hover:text-gray-300 transition">Features</a>
-          <a href="#" className="hover:text-gray-300 transition">Contact</a>
+          <Link to="/" className="hover:text-gray-300 transition">Home</Link>
+          <Link to="/about" className="hover:text-gray-300 transition">About</Link>
+          <Link to="/features" className="hover:text-gray-300 transition">Features</Link>
+          <Link to="/contact" className="hover:text-gray-300 transition">Contact</Link>
         </nav>
 
         {/* Mobile Menu Button */}
@@ -42,10 +43,10 @@ const Header = () => {
           </button>
         </div>
         <nav className="flex flex-col space-y-6 text-lg text-left ml-12 mt-12">
-          <a href="#" className="hover:text-gray-300 transition">Home</a>
-          <a href="#" className="hover:text-gray-300 transition">About</a>
-          <a href="#" className="hover:text-gray-300 transition">Features</a>
-          <a href="#" className="hover:text-gray-300 transition">Contact</a>
+          <Link to="/" className="hover:text-gray-300 transition">Home</Link>
+          <Link to="/about" className="hover:text-gray-300 transition">About</Link>
+          <Link to="/features" className="hover:text-gray-300 transition">Features</Link>
+          <Link to="/contact" className="hover:text-gray-300 transition">Contact</Link>
         </nav>
       </div>
     </header>

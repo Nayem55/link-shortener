@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import logo from "../../assets/Images/logo.png"
 const Footer = () => {
   return (
@@ -14,15 +15,15 @@ const Footer = () => {
 
         {/* Navigation Links */}
         <div className="flex flex-wrap justify-center md:justify-start gap-6">
-          <a href="#" className="text-gray-300 hover:text-white transition">Home</a>
-          <a href="#" className="text-gray-300 hover:text-white transition">About</a>
-          <a href="#" className="text-gray-300 hover:text-white transition">Features</a>
-          <a href="#" className="text-gray-300 hover:text-white transition">Contact</a>
-          <a href="#" className="text-gray-300 hover:text-white transition">Privacy Policy</a>
+          <Link to="/" className="text-gray-300 hover:text-white transition">Home</Link>
+          <Link to="/about" className="text-gray-300 hover:text-white transition">About</Link>
+          <Link href="/features" className="text-gray-300 hover:text-white transition">Features</Link>
+          <Link to="/contact" className="text-gray-300 hover:text-white transition">Contact</Link>
+          <Link to="/privacy-policy" className="text-gray-300 hover:text-white transition">Privacy Policy</Link>
         </div>
 
         {/* Social Media Icons */}
-        <div className="flex space-x-4 mt-6 md:mt-0">
+        <div className="flex space-x-4 mt-6 md:mt-0 ">
           <a href="#" className="text-gray-400 hover:text-white transition text-2xl">
             <i className="fab fa-facebook"></i>
           </a>
