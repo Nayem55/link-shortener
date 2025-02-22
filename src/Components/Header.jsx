@@ -10,9 +10,9 @@ const Header = () => {
     <header className="bg-gray-900 text-white shadow-md">
       <div className="max-w-6xl mx-auto flex justify-between items-center px-6 py-4">
         {/* Logo */}
-        <a href="#" className="text-2xl font-bold">
+        <Link to="/" className="text-2xl font-bold">
           <img src={logo} alt="Logo" className="h-10" />
-        </a>
+        </Link>
 
         {/* Desktop Navigation */}
         <nav className="hidden md:flex space-x-6">
